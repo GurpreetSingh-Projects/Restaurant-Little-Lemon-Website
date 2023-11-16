@@ -6,6 +6,12 @@
   font-family: "Roboto";
   font-weight: 400;
   border-radius: 15px;
+  font-display: justify;
+}
+img {
+  width: 50%;
+  display: flex;
+  margin: 5% auto 5% auto;
 }
 .banner {
   width: 50%;
@@ -33,17 +39,119 @@
   align-items: center;
   justify-content: center;
 }
-.pastaImg {
+.pastaOverlay {
   display: flex;
   position: relative;
+}
+.pastaImg {
   z-index: 0;
-  margin: auto;
   width: 80%;
-  height: 40vh;
+  height: 35vh;
+  margin: auto;
+
   object-fit: cover;
 }
-.pastaoverlayText {
-  z-index: 100;
+.pastaOverlayText {
+  display: flex;
+  flex: 1;
+  margin-left: 10vw;
+  z-index: 1;
+  width: 80%;
+  height: 35vh;
   position: absolute;
-  top: 0;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+.pastaOverlayTitle {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  font-weight: 800;
+  font-size: 250%;
+  left: 2%;
+  top: 25%;
+  right: 45%;
+}
+.pastaOverlayBody {
+  position: absolute;
+  font-weight: 500;
+  font-size: 100%;
+  left: 2%;
+  top: 60%;
+  right: 20%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2% auto 2% auto;
+  width: 80vw;
+}
+.gridMenu {
+  display: flex;
+  margin: 3%;
+  height: 70vh;
+  background-color: antiquewhite;
+  position: relative;
+}
+.gridTitle {
+  position: absolute;
+  display: flex;
+  font-size: 200%;
+  font-weight: 700;
+  top: 5%;
+  left: 5%;
+}
+.gridImg {
+  display: flex;
+  position: absolute;
+  top: 14%;
+  left: 5%;
+  height: 40%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gridBody,
+p {
+  position: absolute;
+  display: flex;
+  font-size: 90%;
+  font-weight: 500;
+  top: 65%;
+  left: 5%;
+  width: 90%;
+}
+.gridLink {
+  position: absolute;
+  display: flex;
+  font-size: 90%;
+  font-weight: 500;
+  bottom: 5%;
+  left: 5%;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+p {
+  top: 130%;
+  left: 30%;
+}
+.footer {
+  position: relative;
+}
+.lemonLogo {
+  display: flex;
+  width: 5%;
+  border-radius: 0;
+  margin-left: 11%;
+}
+.copyright {
+  display: flex;
+  top: 30%;
+  right: 11%;
+  position: absolute;
+  font-size: 90%;
+  font-weight: 500;
+  margin-left: 10vw;
 }
